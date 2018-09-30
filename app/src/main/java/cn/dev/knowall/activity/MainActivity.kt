@@ -17,7 +17,7 @@ class MainActivity : AppCompatActivity() {
         adapter.addFragment(AFragment(), "A")
         adapter.addFragment(BFragment(), "B")
         adapter.addFragment(CFragment(), "C")
-        mViewPager.adapter = adapter
         tabLayout.setupWithViewPager(mViewPager)
+        mViewPager.adapter = adapter
     }
 }

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".flight.ThreeCodeActivity">
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="UselessLeaf,UselessParent">
+
+        <TextView
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/airport_name"
+            android:textColor="#fff" />
+
+        <TextView
+            android:id="@+id/tv_airport_name"
+            android:layout_weight="1" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="UselessLeaf,UselessParent">
+
+        <TextView
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/city_code"
+            android:textColor="#fff" />
+
+        <TextView
+            android:id="@+id/tv_city_code"
+            android:layout_weight="1" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="UselessLeaf,UselessParent">
+
+        <TextView
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/city_name"
+            android:textColor="#fff" />
+
+        <TextView
+            android:id="@+id/tv_city_name"
+            android:layout_weight="1" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="UselessLeaf,UselessParent">
+
+        <TextView
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/three_code"
+            android:textColor="#fff" />
+
+        <TextView
+            android:id="@+id/tv_three_code"
+            android:layout_weight="1" />
+    </TableRow>
+</TableLayout>

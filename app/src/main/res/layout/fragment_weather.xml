@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/weather_background"
+    android:orientation="vertical"
+    tools:context=".weather.WeatherFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        tools:ignore="UselessLeaf">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="@string/update_time"
+            android:textColor="#fff" />
+
+        <TextView
+            android:id="@+id/tv_update_time"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textColor="#fff" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/daily_picture"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:contentDescription="@null"
+        android:src="@drawable/weather_header" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            tools:ignore="UselessLeaf,UselessParent">
+
+            <Spinner
+                android:id="@+id/spProvince_weather"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <Spinner
+                android:id="@+id/spCity_weather"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <Spinner
+                android:id="@+id/spArea_weather"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+
+        </LinearLayout>
+
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:ignore="UselessLeaf,UselessParent">
+
+                <TextView
+                    android:layout_weight="1"
+                    android:text="@string/weather_list"
+                    android:textColor="#fff" />
+
+                <TextView
+                    android:id="@+id/tv_weather"
+                    android:layout_weight="2"
+                    android:textColor="#fff" />
+
+                <TextView
+                    android:layout_weight="1"
+                    android:gravity=""
+                    android:text="@string/temperature"
+                    android:textColor="#fff" />
+
+                <TextView
+                    android:id="@+id/tv_temperature"
+                    android:layout_weight="1"
+                    android:textColor="#fff" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:ignore="UselessLeaf,UselessParent">
+
+                <TextView
+                    android:layout_weight="1"
+                    android:text="@string/humidity"
+                    android:textColor="#fff" />
+
+                <TextView
+                    android:id="@+id/tv_humidity"
+                    android:layout_weight="2"
+                    android:textColor="#fff" />
+
+                <TextView
+                    android:layout_weight="1"
+                    android:text="@string/wind"
+                    android:textColor="#fff" />
+
+
+                <TextView
+                    android:id="@+id/tv_wind"
+                    android:layout_weight="1"
+                    android:textColor="#fff" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:ignore="UselessLeaf,UselessParent">
+
+                <TextView
+                    android:layout_weight="1"
+                    android:text="@string/sunrise_time"
+                    android:textColor="#fff" />
+
+                <TextView
+                    android:id="@+id/tv_sunrise"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:textColor="#fff" />
+
+                <TextView
+                    android:layout_weight="1"
+                    android:text="@string/sunset_time"
+                    android:textColor="#fff" />
+
+                <TextView
+                    android:id="@+id/tv_sunset_time"
+                    android:layout_weight="1"
+                    android:textColor="#fff" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:ignore="UselessLeaf,UselessParent">
+
+                <TextView
+                    android:layout_weight="1"
+                    android:text="@string/air_level"
+                    android:textColor="#fff" />
+
+                <TextView
+                    android:id="@+id/tv_air_level"
+                    android:layout_weight="2"
+                    android:textColor="#fff" />
+
+                <TextView
+                    android:layout_weight="1"
+                    android:text="@string/air_population"
+                    android:textColor="#fff" />
+
+                <TextView
+                    android:id="@+id/tv_air_population"
+                    android:layout_weight="1"
+                    android:textColor="#fff" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:ignore="UselessLeaf,UselessParent">
+
+                <TextView
+                    android:layout_weight="1"
+                    android:textColor="#fff"
+                    tools:text="@string/cold" />
+
+                <TextView
+                    android:id="@+id/tv_cold"
+                    android:layout_weight="2"
+                    android:textColor="#fff" />
+
+                <TextView
+                    android:layout_weight="1"
+                    android:text="@string/clothe"
+                    android:textColor="#fff" />
+
+                <TextView
+                    android:id="@+id/tv_clothe"
+                    android:layout_weight="1"
+                    android:textColor="#fff" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:ignore="UselessLeaf,UselessParent">
+
+
+                <TextView
+                    android:layout_weight="1"
+                    android:text="@string/sport"
+                    android:textColor="#fff" />
+
+                <TextView
+                    android:id="@+id/tv_sport"
+                    android:layout_weight="2"
+                    android:textColor="#fff" />
+
+                <TextView
+                    android:layout_weight="1"
+                    android:text="@string/wash_clothe"
+                    android:textColor="#fff" />
+
+                <TextView
+                    android:id="@+id/tv_wash_clothe"
+                    android:layout_weight="1"
+                    android:textColor="#fff" />
+
+            </TableRow>
+
+        </TableLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="30dp"
+        android:drawableStart="@drawable/week"
+        android:gravity="center_vertical"
+        android:text="@string/future_week"
+        android:textColor="#fff"
+        android:textSize="20sp"
+        tools:targetApi="o" />
+
+    <LinearLayout
+        android:id="@+id/ll_week"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:ignore="UselessLeaf" />
+
+</LinearLayout>
